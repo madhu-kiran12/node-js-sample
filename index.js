@@ -5,7 +5,7 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-  response.send('Hello World!, testing webhooks to auto trigger jenkins pipeline')
+  response.send('Hello World!, testing webhooks to auto trigger and run jenkins pipeline')
 })
 
 app.listen(app.get('port'), '0.0.0.0', function() {
